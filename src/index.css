@@ -2,14 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background-color: #d1b1c8;
+body {
+	background-color: #d1b1c8;
 }
 
-.squareCurrentNumber{
-    font-size: 300px;
-    margin: 0;
-    padding: 0;
+.squareCurrentNumber {
+	font-size: 300px;
+	margin: 0;
+	padding: 0;
 }
 
 /* .bodysquare{
@@ -41,6 +41,25 @@ body{
 	}
 } */
 
-.spacer{
-    padding: 20px;
+.spacer {
+	padding: 10px;
+}
+
+.bodysquare {
+	margin: 0;
+	padding: 0;
+	line-height: normal;
+}
+
+.line {
+	height: 3px;
+	background: black;
+    margin: auto;
+    width: 50%; 
+}
+
+.signature{
+	font-family: "RobotoMono-VariableFont_wght";
+	src: url("./assets/fonts/RobotoMono-VariableFont_wght");
+	text-align: left;
 }

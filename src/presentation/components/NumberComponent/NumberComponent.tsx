@@ -17,9 +17,7 @@ const NumberComponent: React.FC<NumberComponentInterface> = ({
 				{!loading ? (
 					<div>
 						<h1 className="squareCurrentNumber">{numberToShow.toString()}</h1>
-						<p className="overline text-5xl">
-							¡Juega!
-						</p>
+						<div className="line"></div>
 					</div>
 				) : (
 					<LoadingSpin />
