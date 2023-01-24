@@ -9,18 +9,16 @@ export interface HomeInterface {}
 const Home: React.FC<HomeInterface> = () => {
 	return (
 		<section>
-			<div className="text-base">
-				<p className="signature">Gabriel R - 23/01/2023</p>
+			<div className="text-base font-bold">
+				<p>Gabriel R - 23/01/2023</p>
 			</div>
 			<div>
 				<NumberComponentContainer />
 			</div>
-			<div className="grid grid-cols-2 gap-2 text-center pt-20">
+			<div className="grid grid-cols-3 gap-1 text-center pt-20">
 				<NewNumberComponentContainer />
-				<ResetComponentContainer />
-			</div>
-			<div className="text-center pt-5">
 				<MaxNumberComponentContainer />
+				<ResetComponentContainer />
 			</div>
 		</section>
 	);

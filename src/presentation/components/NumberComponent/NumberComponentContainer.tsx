@@ -44,7 +44,7 @@ const NumberComponentContainer: React.FC<
 			numberToShow={
 				bingoNumberListState.length > 0
 					? bingoNumberListState[bingoNumberListState.length - 1].value
-					: 0
+					: "Game has not started Yet"
 			}
 		/>
 	);

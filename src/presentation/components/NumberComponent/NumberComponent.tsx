@@ -2,7 +2,7 @@ import React from "react";
 import { LoadingSpin } from "../LoadingSpin";
 
 interface NumberComponentInterface {
-	numberToShow: Number;
+	numberToShow: Number | string;
 	loading: Boolean;
 }
 
@@ -15,10 +15,17 @@ const NumberComponent: React.FC<NumberComponentInterface> = ({
 			<div className="spacer"></div>
 			<div className="bodysquare">
 				{!loading ? (
-					<div>
-						<h1 className="squareCurrentNumber">{numberToShow.toString()}</h1>
-						<div className="line"></div>
-					</div>
+					typeof numberToShow == "number" ? (
+						<div>
+							<h1 className="squareCurrentNumber">{numberToShow.toString()}</h1>
+							<div className="line"></div>
+						</div>
+					) : (
+						<div>
+							<h1 className="squareCurrentNumber2">{numberToShow.toString()}</h1>
+							<div className="line"></div>
+						</div>
+					)
 				) : (
 					<LoadingSpin />
 				)}

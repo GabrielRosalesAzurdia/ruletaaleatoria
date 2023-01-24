@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { toast } from "react-hot-toast";
 import {
 	BingoNumberList,
@@ -40,6 +40,10 @@ const NewNumberComponentContainer: React.FC<
 				toast.error("A Failure happened on the list :(");
 				return;
 			}
+			if (responseMax.value == 0 || responseMax.value == null) {
+				toast.error("Give a max value pls ; )");
+				return;
+			}
 			getListMethod().then((responselist) => {
 				if (responselist instanceof LocaLStorageFailure) {
 					toast.error("A Local Failure happened on the list :(");
@@ -62,8 +66,8 @@ const NewNumberComponentContainer: React.FC<
 						return;
 					}
 					dispatch(addItemReducer({ value: newNumber }));
-					if(responseMax.value == responselist.value.length+1){
-						toast.success("We ran out of numbers!")
+					if (responseMax.value == responselist.value.length + 1) {
+						toast.success("We ran out of numbers!");
 					}
 				});
 			});
