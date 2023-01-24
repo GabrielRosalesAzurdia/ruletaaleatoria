@@ -20,7 +20,7 @@ export class getListImpl implements getList{
 
     /**
 	 * Creaetes an getListImpl
-	 * @param repository - A repository {@link BingoMaxNumberRepository}, when used give the
+	 * @param repository - A repository {@link BingoNumberListRepository}, when used give the
 	 * implementation of the repository BingoMaxNumberRepositoryImpl
 	 */
 	constructor(repository: BingoNumberListRepository) {
