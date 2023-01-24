@@ -22,7 +22,7 @@ const NumberComponent: React.FC<NumberComponentInterface> = ({
 						</div>
 					) : (
 						<div>
-							<h1 className="squareCurrentNumber2">{numberToShow.toString()}</h1>
+							<h1 className="squareCurrentNumber2">{numberToShow as String}</h1>
 							<div className="line"></div>
 						</div>
 					)
