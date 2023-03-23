@@ -6,9 +6,6 @@ import {
 } from "../../../domain/models";
 import { BingoNumberListRepository } from "../../../domain/repositories/BingoNumberListRepository";
 import {
-	setMaxInToLocalStorage,
-	addMaxToLocalStorage,
-	getMaxFromLocalStorage,
 	getListFromLocalStorage,
 	setBingoNumberListLocalStorage,
 	addItemToLocalStorage,

@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 body {
-	background-color: #d1b1c8;
+	background-color: black;
+	color: white;
 }
 
 .squareCurrentNumber {
