@@ -6,6 +6,7 @@ import CheckPastNumbersComponent from "./CheckPastNumbersComponent";
 
 interface CheckPastNumbersComponentContainerInterface {}
 
+// Checks if a number has past
 const CheckPastNumbersComponentContainer: React.FC<
   CheckPastNumbersComponentContainerInterface
 > = () => {
