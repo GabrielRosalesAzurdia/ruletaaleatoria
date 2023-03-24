@@ -1,4 +1,5 @@
 import React from "react";
+import CheckPastNumbersComponentContainer from "../../presentation/components/CheckPastNumbersComponent/CheckPastNumbersComponentContainer";
 import MaxNumberComponentContainer from "../../presentation/components/MaxNumberComponent/MaxNumberComponentContainer";
 import NewNumberComponentContainer from "../../presentation/components/NewNumberComponent/NewNumberComponentContainer";
 import NumberComponentContainer from "../../presentation/components/NumberComponent/NumberComponentContainer";
@@ -19,6 +20,9 @@ const Home: React.FC<HomeInterface> = () => {
 				<NewNumberComponentContainer />
 				<MaxNumberComponentContainer />
 				<ResetComponentContainer />
+			</div>
+			<div>
+				<CheckPastNumbersComponentContainer/>
 			</div>
 		</section>
 	);

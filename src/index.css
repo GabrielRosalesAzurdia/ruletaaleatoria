@@ -71,3 +71,8 @@ body {
 	src: url("./assets/fonts/RobotoMono-VariableFont_wght");
 	text-align: left;
 }
+
+.verifyFormBackgroundColor{
+	background-color: #7b7878;
+	color: white;
+}
